@@ -76,7 +76,6 @@ export class MovieInfoService {
         "Gary Oldman"
       ]
     }, {
-    {
       id: 5,
       title: "Schindler's List",
       poster: "https://i.imgur.com/IWZJOmu.jpg",
@@ -93,9 +92,9 @@ export class MovieInfoService {
         "Caroline Goodall",
         "Jonathan Sagall",
         "Embeth Davidtz"
-      ]
-    }
-  ];
+        ]
+      }
+    ];
 
   constructor() { }
 
@@ -103,7 +102,7 @@ export class MovieInfoService {
   getmovies(): Object[] {
     return this.movies;
   }
-  getMovie(id: number): Object {
-    return this.movies.find( (movie) => movie.id === id );
-  }
+  // getMovie(id: number): Object {
+  //   return this.movies.find( (movie) => movie.id === id );
+  // }
 }
