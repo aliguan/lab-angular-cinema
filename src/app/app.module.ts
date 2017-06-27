@@ -10,10 +10,13 @@ import { MyMovieComponentComponent } from './my-movie-component/my-movie-compone
 import { MovieInfoService } from './services/movie-info.service';
 
 const routes: Routes = [
+
   { path: 'home', component: MyHomeComponentComponent },
 
-  { path: 'movie/:id', component: MyMovieComponentComponent },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
 
+
+  { path: 'movie/:id', component: MyMovieComponentComponent },
 
 ]
 
