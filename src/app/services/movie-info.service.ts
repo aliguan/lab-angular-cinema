@@ -102,7 +102,9 @@ export class MovieInfoService {
   getmovies(): Object[] {
     return this.movies;
   }
-  // getMovie(id: number): Object {
-  //   return this.movies.find( (movie) => movie.id === id );
-  // }
+
+  getMovie(id: number): Object {
+    return this.movies.find( movie => movie['id'] === id );
+
+  }
 }
