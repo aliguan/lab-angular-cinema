@@ -12,13 +12,12 @@ export class MyMovieComponentComponent implements OnInit {
 
   movieId: number;
   theMovie: Object;
+
   constructor(private movieinfo: MovieInfoService,
     private movieRoute: ActivatedRoute) { }
 
   ngOnInit() {
-    this.movieRoute.params
-    .subscribe((paramsResult) =>
-          this.movieId = Number(paramsResult['id']));
+    this.movieRoute.params.subscribe((paramsResult) => this.movieId = Number(paramsResult['id']));
 
     this.fetchAMovie();
   }

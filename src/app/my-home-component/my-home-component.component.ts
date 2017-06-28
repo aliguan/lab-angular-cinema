@@ -10,6 +10,7 @@ import { MovieInfoService } from '../services/movie-info.service';
 export class MyHomeComponentComponent implements OnInit {
 
   movies: Object[] = [];
+
   constructor(private movieInfo: MovieInfoService ) { }
 
   ngOnInit() {
